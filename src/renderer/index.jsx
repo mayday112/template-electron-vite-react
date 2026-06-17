@@ -27,6 +27,10 @@
  */
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import Post from "./Post";
+import { Route, Routes, HashRouter } from "react-router";
+import Login from "./Login";
+import User from "./User";
 
 function App() {
   console.log(
@@ -35,11 +39,13 @@ function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">💖 Hello World!</h1>
-      <p className="text-red-500">Welcome to your Electron application.</p>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Click me
-      </button>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/post" element={<Post />} />
+          <Route path="/user" element={<User />} />
+        </Routes>
+      </HashRouter>
     </>
   );
 }

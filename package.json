@@ -1,8 +1,8 @@
 {
-  "name": "template-electron-vite-react",
-  "productName": "template-electron-vite-react",
+  "name": "test-crud-electron-typeorm",
+  "productName": "Test Crud Electron Typeorm",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Lorem ipsum dolor sit amet",
   "main": ".vite/build/main.js",
   "private": true,
   "scripts": {
@@ -28,15 +28,23 @@
     "@electron-forge/plugin-fuses": "^7.11.1",
     "@electron-forge/plugin-vite": "^7.11.1",
     "@electron/fuses": "^1.8.0",
+    "@types/better-sqlite3": "^7.6.13",
     "electron": "40.6.0",
+    "electron-rebuild": "^3.2.9",
     "vite": "^5.4.21"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.1",
     "@vitejs/plugin-react": "^5.1.4",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.8.0",
     "electron-squirrel-startup": "^1.0.1",
+    "electron-store": "^11.0.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "tailwindcss": "^4.2.1"
+    "react-router": "^7.14.0",
+    "reflect-metadata": "^0.2.2",
+    "tailwindcss": "^4.2.1",
+    "typeorm": "^0.3.28"
   }
 }

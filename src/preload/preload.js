@@ -1,2 +1,10 @@
-// See the Electron documentation for details on how to use preload scripts:
-// https://www.electronjs.org/docs/latest/tutorial/process-model#preload-scripts
+import { contextBridge } from "electron";
+import { authBridge } from "./bridges/auth.bridge.js";
+import { postBridge } from "./bridges/post.bridge.js";
+import { userBridge } from "./bridges/user.bridge.js";
+
+contextBridge.exposeInMainWorld("api", {
+  ...authBridge,
+  ...postBridge,
+  ...userBridge,
+});
